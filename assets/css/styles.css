@@ -1,0 +1,60 @@
+/* etiqueta HTML va directamente el nombre*/
+/* Clases va con "." adelante */
+/* ID va con "#" adelante */
+
+body{
+    /* para cambiar color del fondo*/
+    background-color: rgb(243, 88, 88);
+    /* para cambiar el color de las letras*/
+    color: rgb(1, 1, 124);
+
+
+
+}
+
+#redes{
+    /* para centralizar el texto*/
+    text-align: center;
+    /* para poner un margen automatico*/
+    margin: auto;
+}
+li{
+    /* para sacarle los estilos a los puntitos de las listas*/
+    list-style-type: none;
+    margin-left: -3.5%;
+}
+
+.imgPerfil{
+    /* para redondear la imagen*/
+    border-radius: 100%;
+    
+}
+.dos{
+    color: rgb(0, 0, 0);
+}
+
+.video{
+    margin: 7rem;
+    border: 1rem solid  black;
+}
+
+.mapa{
+    padding: 1%;
+    border: 2rem solid  black;
+}
+.banner{
+    justify-content: end;
+    display:flex;
+}
+.opcion2{
+    /* para cambiar el tamaño de la letra*/
+    font-size: 5rem;
+}
+#aca{
+    margin-left: 0.5%;
+    text-align: left;
+}
+
+#prueba{
+    text-align: right;
+}
