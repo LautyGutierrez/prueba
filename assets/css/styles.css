@@ -23,12 +23,13 @@ li{
     list-style-type: none;
     margin-left: -3.5%;
 }
-
+/*
 .imgPerfil{
     /* para redondear la imagen*/
     border-radius: 100%;
     
-}
+  }
+*/
 .dos{
     color: rgb(0, 0, 0);
 }
@@ -38,14 +39,20 @@ li{
     border: 1rem solid  black;
 }
 
+.logoAP{
+    filter:invert()
+}
+
 .mapa{
     padding: 1%;
     border: 2rem solid  black;
 }
+/*
 .banner{
     justify-content: end;
     display:flex;
 }
+*/
 .opcion2{
     /* para cambiar el tamaño de la letra*/
     font-size: 5rem;
@@ -54,7 +61,10 @@ li{
     margin-left: 0.5%;
     text-align: left;
 }
-
+.imgPerfil{
+    background-image: ;
+}
 #prueba{
     text-align: right;
 }
+

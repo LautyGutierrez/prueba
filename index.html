@@ -13,43 +13,21 @@
 <body>
     <!-- Seccion para navbar -->
     <section id="navbar">
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li>
-                </ul>
+              <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/" target="_blank"><img class="logoAP" src="assets/img/logoAP.png" alt="logoAP"></a>
+              
                 <ul class="list-group list-group-horizontal">
                     <li class="list-group-item"><i class="fa-brands fa-linkedin-in"></i></li>
                     <li class="list-group-item"><i class="fa-brands fa-github"></i></li>
                     <li class="list-group-item"><i class="fa-brands fa-codepen"></i></li>
                 </ul>
                 <!-- Button trigger modal -->
-<button type="button" class="btn btn-blue" data-bs-toggle="modal" data-bs-target="#loginModal">
+<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#loginModal">
     <i class="fa-solid fa-lock"></i>
+  </button>
+  <button type="button" class="btn btn-light" >
+    <i class="fa-solid fa-lock-open"></i>
   </button>
               </div>
             </div>
@@ -64,7 +42,7 @@
     <hr>
     <p>cualquier cosa</p>
 
-    <!-- seccion para redes -->
+    <!-- seccion para redes 
     <section id="redes">
         <h2>Redes</h2>
         <ul>
@@ -73,12 +51,47 @@
             <li><a href="https://github.com/" target="_blank">un enlace a github</a></li>
         </ul>
     </section>
+-->
+
+    <section id="redes">
+        <div class="container text-center">
+            <div class="row">
+              <div class="col-6">
+                <div class="banner">
+                    <a href="https://www.youtube.com/embed/9cO1RVQLRUY" target="_blank"> 
+                        <img class="imgPerfil" src="assets/img/diegoArmandoBarreras.jpg" alt="La-imagen-de-Diego">
+                    </a>
+                </div>
+              </div>
+              <div class="col-6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae iusto earum magnam alias, odit, nihil explicabo, quidem deleniti laboriosam pariatur officiis voluptatibus voluptatum beatae incidunt perspiciatis vero sit corrupti totam?</p>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section id="editRedes" class="mt-4 pi bg-dark">
+        <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#imgPerfilModal">Editar Imagen
+                  </button>
+              </div>
+              <div class="col">
+                <button class="btn btn-light">Editar Nombre</button>
+              </div>
+              <div class="col">
+                <button class="btn btn-light">Editar Info</button>
+              </div>
+            </div>
+          </div>
+    </section>
 
     <section id="aca">
         <!-- aca  -->
         aca <strong>escribi</strong> algo
         <br>
-        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/9cO1RVQLRUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
         <br>
         <img src="assets/img/diegoArmandoBarreras.jpg" alt="La-imagen-de-Diego">
     </section>
@@ -100,17 +113,12 @@
     <section>
         <h2 class="opcion2"> Opción <span class="dos">2</span> </h2>
         <p>si apretas la imagen te lleva al video</p>
-        <div class="banner">
-            <a href="https://www.youtube.com/embed/9cO1RVQLRUY" target="_blank"> 
-                <img class="imgPerfil" src="assets/img/diegoArmandoBarreras.jpg" alt="La-imagen-de-Diego">
-            </a>
-        </div>
         <p> <strong>texto en negrita</strong></p>
         <p> <strike>texto tachado</strike></p>
         <p><i>texto en cursiva</i></p>
     </section>
 
-    <!-- Modal -->
+    <!-- Modal Login-->
   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -148,7 +156,33 @@
       </div>
     </div>
   </div>
+ <!-- Modal editar Imagen Perfil-->
+  <div class="modal fade" id="imgPerfilModal" tabindex="-1" aria-labelledby="imgPerfilModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="imgPerfilModalLabel">Imagen Perfil</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+            <form>
+                
 
+                <div>
+                    <label for="imgPerfil" class="form-label">Editar imagen</label>
+                    <input type="url" placeholder="inserte url de imagen" id="imgPerfil" name="imgPerfil" required>
+                </div>
+
+             </div>
+             <div class="modal-footer">
+             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="submit" class="btn btn-primary">Ingresar</button>
+             </div>
+            </form>
+      </div>
+    </div>
+  </div>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
